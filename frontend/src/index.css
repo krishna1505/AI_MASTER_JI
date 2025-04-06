@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #0f172a;  /* Dark background */
+  color: #e2e8f0;  /* Light text */
+  font-family: 'Fira Code', monospace;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.left, .right {
+  flex: 1;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.code-editor {
+  color: #ffffff;  /* Editor text color white */
+  background-color: #1e1e1e; /* Editor background dark */
+  border: 1px solid #334155;
+  border-radius: 8px;
+  min-height: 400px;
+  width: 100%;
+}
+
+.review-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+   
+    transition: 0.3s;
+  }
+  
+  .review-btn:hover {
+    background-color: #35eb25;
+  }
+  
+.right {
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #666e7a;
+}
+/* App.css */
+
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #0f0f0f;
+  }
+  
+  main {
+    display: flex;
+    height: calc(100% - 64px); /* Navbar ki height */
+    overflow: hidden;
+  }
+  
+  .left, .right {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .code {
+    flex: 1;
+  }
+  
+  .review {
+    background: #7c3aed;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .review:hover {
+    background: #a855f7;
+  }
+  
+  .right {
+    overflow-y: auto;  /* Sirf output wale part me scroll */
+    background: #1c1c1c; /* Optional dark background */
+    border-left: 1px solid #333; /* Optional line between sections */
+  }
+  
